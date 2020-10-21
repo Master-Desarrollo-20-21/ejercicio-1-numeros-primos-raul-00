@@ -6,7 +6,7 @@ public class PrimeNumbers {
 	public static void main(String args[]) {
 
 		List<Integer> primes = getPrimesBetween(0, 49);
-		int primesSum = AddNumbers(primes);
+		int primesSum = addNumbers(primes);
 		System.out.println(">Suma de los números primos que hay entre los 50 primeros números:");
 		System.out.println("-Resultado: " + primesSum);
 		System.out.println("-Primos usados: " + primes.toString());
@@ -14,7 +14,7 @@ public class PrimeNumbers {
 		System.out.println();
 
 		primes = getFirstNPrimes(50);
-		primesSum = AddNumbers(primes);
+		primesSum = addNumbers(primes);
 		System.out.println(">Suma de los 50 primeros números primos:");
 		System.out.println("-Resultado: " + primesSum);
 		System.out.println("-Primos usados: " + primes.toString());
@@ -53,7 +53,7 @@ public class PrimeNumbers {
 		return primeList;
 	}
 
-	private static int AddNumbers(List<Integer> numberList) {
+	private static int addNumbers(List<Integer> numberList) {
 		assert numberList != null;
 
 		int sum = 0;
