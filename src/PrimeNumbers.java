@@ -67,12 +67,14 @@ public class PrimeNumbers {
 
 	private static boolean isPrime(int number) {
 		assert number >= 0;
+		
+		final int FIRST_PRIME_NUMBER = 2;  
 
 		if (number == 0 || number == 1) {
 			return false;
 		}
 
-		for (int i = 2; i < number; i++) {
+		for (int i = FIRST_PRIME_NUMBER; i < number; i++) {
 			if (number % i == 0) {
 				return false;
 			}
